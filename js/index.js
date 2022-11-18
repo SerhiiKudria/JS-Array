@@ -9,6 +9,8 @@ console.log("arr", arr);
 //з масиву, додати елемент до початку і кінця.
 arr.splice(0, 1);
 arr.splice(arr.length - 1, 1);
+arr.unshift(Math.floor(Math.random() * 2));
+arr.push(Math.floor(Math.random() * 2));
 console.log("arr", arr);
 //2 Вивести розмір масиву.
 console.log("arr.length", arr.length);
@@ -61,7 +63,7 @@ const arrMin = arrDiv.map(function notZero(item) {
 });
 console.log("arrMin", arrMin);
 //10 Вивести елементи масиву, зведені у куб.
-const arrCube = arrDiv.map(function Cube(item) {
+const arrCube = arrDiv.map(function (item) {
   return item ** 3;
 });
 console.log("arrCube", arrCube);
